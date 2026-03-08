@@ -31,28 +31,28 @@ function Navbar() {
           <form className="d-flex">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               <li className="nav-item">
-                <a className="nav-link active" href="#">
+                <a className="nav-link active" href="/signup">
                   Signup
                 </a>
               </li>
 
               <li className="nav-item">
-                <a className="nav-link active" href="#">
+                <a className="nav-link active" href="/about">
                   About
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link active" href="#">
+                <a className="nav-link active" href="/product">
                   Product
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link active" href="#">
+                <a className="nav-link active" href="/pricing">
                   Pricing
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link active" href="#">
+                <a className="nav-link active" href="support">
                   Support
                 </a>
               </li>
