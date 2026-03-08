@@ -1,4 +1,5 @@
 import React from "react";
+import {Link} from "react-router-dom";
 
 function Navbar() {
   return (
@@ -7,13 +8,13 @@ function Navbar() {
       style={{ backgroundColor: "#FFF" }}
     >
       <div className="container p-2">
-        <a className="navbar-brand" href="#">
+        <Link className="navbar-brand" to="/">
           <img
             src="media/images/logo.svg"
             alt="logo"
             style={{ width: "25%" }}
           />
-        </a>
+        </Link>
 
         <button
           className="navbar-toggler"
@@ -31,30 +32,30 @@ function Navbar() {
           <form className="d-flex">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               <li className="nav-item">
-                <a className="nav-link active" href="/signup">
+                <Link className="nav-link active" to="/signup">
                   Signup
-                </a>
+                </Link>
               </li>
 
               <li className="nav-item">
-                <a className="nav-link active" href="/about">
+                <Link className="nav-link active" to="/about">
                   About
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link active" href="/product">
+                <Link className="nav-link active" to="/product">
                   Product
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link active" href="/pricing">
+                <Link className="nav-link active" to="/pricing">
                   Pricing
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link active" href="support">
+                <Link className="nav-link active" to="support">
                   Support
-                </a>
+                </Link>
               </li>
             </ul>
           </form>
