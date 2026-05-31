@@ -6,4 +6,4 @@ function AboutPage() {
      );
 }
 
-export default AbouPage;
+export default AboutPage;
