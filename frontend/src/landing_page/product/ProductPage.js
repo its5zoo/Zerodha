@@ -13,7 +13,7 @@ function PricingPage() {
     <>
       <Hero />
       <LeftSection
-        imageURL="media/images/kite.png"
+        imageURL="media\images\kite.png"
         productName="Kite"
         productDesription="Our ultra-fast flagship trading platform with streaming market data, advanced charts, an elegant UI, and more. Enjoy the Kite experience seamlessly on your Android and iOS devices."
         tryDemo=""
@@ -37,7 +37,7 @@ function PricingPage() {
         appStore=""
       />
       <RightSection
-        imageURL="media/images/kiteconnect.png"
+        imageURL="media/images/kite.png"
         productName="Kite Connect API"
         productDesription="Build powerful trading platforms and experiences with our super simple HTTP/JSON APIs. If you are a startup, build your investment app and showcase it to our clientbase."
         learnMore=""
