@@ -14,7 +14,9 @@ const Holdings = () => {
   ]);
 
   useEffect(() => {
-    axios.get("http://localhost:3002/allHoldings").then((res) => {
+    const BACKEND_URL = process.env.REACT_APP_BACKEND_URL || "https://zerodha-j95a.onrender.com";
+    axios.get(`${BACKEND_URL}/allHoldings`).then((res) => {
+      // console.log(res.data);
       setAllHoldings(res.data);
     })
   },[]);
