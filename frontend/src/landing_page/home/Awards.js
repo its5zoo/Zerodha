@@ -38,7 +38,7 @@ function Awards() {
             <li><p>Bonds and Growth</p></li>
           </ul>
         </div>
-        <img src='media/images/pressLogos.png' className='pt-2' style={{width:"85%"}}/>
+        <img src='media/images/pressLogos.png' alt="Press Logos" className='pt-2' style={{width:"85%"}}/>
       </div>
       
     </div>

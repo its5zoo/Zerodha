@@ -14,6 +14,7 @@ function Team() {
         <div className="col-6 p-3 text-center">
           <img
             src="media/images/faizaan.jpg.png"
+            alt="MD Faizaan Raza Khan"
             style={{ borderRadius: "100%", width: "50%" }}
           />
           <h4 className="mt-5">MD Faizaan Raza Khan</h4>
