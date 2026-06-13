@@ -54,9 +54,9 @@ const Menu = () => {
             </Link>
           </li>
           <li>
-            <div style={{textDecoration:"none", cursor: "pointer"}}>
+            <a style={{textDecoration:"none"}} href="https://its5zoozerodhahome.netlify.app/">
             <p className={menuClass}>Home</p>
-            </div>
+            </a>
           </li>
         </ul>
         <hr />

@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const DASHBOARD_URL = process.env.REACT_APP_DASHBOARD_URL || "http://localhost:3000";
+  const DASHBOARD_URL = process.env.REACT_APP_DASHBOARD_URL || "https://its5zoozerodhadashboard.netlify.app/";
 
   return (
     <>
