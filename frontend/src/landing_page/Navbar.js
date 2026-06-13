@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 
 function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const DASHBOARD_URL = process.env.REACT_APP_DASHBOARD_URL || "https://its5zoozerodhadashboard.netlify.app/";
 
   return (
     <>
@@ -33,7 +32,7 @@ function Navbar() {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav ms-auto mb-2 mb-lg-0 gap-4 align-items-center" style={{ fontSize: "15px", color: "#666" }}>
               <li className="nav-item">
-                <a className="nav-link" href={DASHBOARD_URL}>
+                <a className="nav-link" href="https://its5zoozerodhadashboard.netlify.app/">
                   Dashboard
                 </a>
               </li>
