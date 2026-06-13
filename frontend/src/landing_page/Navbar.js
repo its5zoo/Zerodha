@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 
 function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const isLoggedIn = localStorage.getItem("isLoggedIn") === "true";
+  const DASHBOARD_URL = process.env.REACT_APP_DASHBOARD_URL || "http://localhost:3000";
 
   return (
     <>
@@ -32,9 +34,15 @@ function Navbar() {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav ms-auto mb-2 mb-lg-0 gap-4 align-items-center" style={{ fontSize: "15px", color: "#666" }}>
               <li className="nav-item">
-                <Link className="nav-link" aria-current="page" to="/signup">
-                  Signup
-                </Link>
+                {isLoggedIn ? (
+                  <a className="nav-link" aria-current="page" href={DASHBOARD_URL}>
+                    Dashboard
+                  </a>
+                ) : (
+                  <Link className="nav-link" aria-current="page" to="/signup">
+                    Signup
+                  </Link>
+                )}
               </li>
               <li className="nav-item">
                 <Link className="nav-link" to="/about">
