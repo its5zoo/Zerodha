@@ -111,11 +111,19 @@ function OtpPage() {
                 </div>
             </div>
 
-            {/* Bottom Bar */}
             <div className="border-top py-3 px-5 d-flex justify-content-end bg-white" style={{ minHeight: "80px" }}>
-                <Link to="/email" className={`btn px-4 py-2 ${otpValue.length === 6 ? 'active' : 'disabled'}`} style={{ backgroundColor: otpValue.length === 6 ? "#387ed1" : "#b3b3b3", color: "white", borderRadius: "3px", fontWeight: "500", letterSpacing: "0.5px" }}>
+                <button 
+                    onClick={() => {
+                        if(otpValue.length === 6) {
+                            localStorage.setItem("isLoggedIn", "true");
+                            window.location.href = "/";
+                        }
+                    }}
+                    className={`btn px-4 py-2 ${otpValue.length === 6 ? 'active' : 'disabled'}`} 
+                    style={{ backgroundColor: otpValue.length === 6 ? "#387ed1" : "#b3b3b3", color: "white", border: "none", borderRadius: "3px", fontWeight: "500", letterSpacing: "0.5px" }}
+                >
                     Continue
-                </Link>
+                </button>
             </div>
         </div>
     );

@@ -34,26 +34,14 @@ function Navbar() {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav ms-auto mb-2 mb-lg-0 gap-4 align-items-center" style={{ fontSize: "15px", color: "#666" }}>
               <li className="nav-item">
-                {isLoggedIn ? (
-                  <div className="d-flex gap-3 align-items-center">
-                    <a className="nav-link" aria-current="page" href={DASHBOARD_URL}>
-                      Dashboard
-                    </a>
-                    <button 
-                      className="btn btn-link nav-link" 
-                      onClick={() => {
-                        localStorage.removeItem("isLoggedIn");
-                        window.location.reload();
-                      }}
-                    >
-                      Logout
-                    </button>
-                  </div>
-                ) : (
-                  <Link className="nav-link" aria-current="page" to="/signup">
-                    Signup
-                  </Link>
-                )}
+                <a className="nav-link" href={DASHBOARD_URL}>
+                  Dashboard
+                </a>
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link" aria-current="page" to="/signup">
+                  Signup
+                </Link>
               </li>
               <li className="nav-item">
                 <Link className="nav-link" to="/about">
