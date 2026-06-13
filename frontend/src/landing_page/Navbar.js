@@ -45,6 +45,11 @@ function Navbar() {
                 )}
               </li>
               <li className="nav-item">
+                <a className="nav-link" href={DASHBOARD_URL}>
+                  Dashboard
+                </a>
+              </li>
+              <li className="nav-item">
                 <Link className="nav-link" to="/about">
                   About
                 </Link>
