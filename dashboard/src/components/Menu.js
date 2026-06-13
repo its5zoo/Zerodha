@@ -53,6 +53,11 @@ const Menu = () => {
             <p className={selectedMenu===5 ? activeMenuClass : menuClass}>Apps</p>
             </Link>
           </li>
+          <li>
+            <a style={{textDecoration:"none"}} href={process.env.REACT_APP_FRONTEND_URL || "https://zerodha-frontend.onrender.com"}>
+            <p className={menuClass}>Home</p>
+            </a>
+          </li>
         </ul>
         <hr />
         <div className="profile" onClick={handleProfileClick}>
